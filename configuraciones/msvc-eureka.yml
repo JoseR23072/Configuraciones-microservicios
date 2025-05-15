@@ -14,8 +14,3 @@ eureka:
     service-url:
       defaultZone: http://${EUREKA_INSTANCE_HOSTNAME:localhost}:${server.port}/eureka/
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,metrics
