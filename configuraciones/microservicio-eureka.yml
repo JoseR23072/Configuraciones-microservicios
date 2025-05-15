@@ -16,13 +16,6 @@ eureka:
 
 management:
   metrics:
-    enable:
-      all: false
-  binders:
-    processor:
-      enabled: false
-spring:
-  autoconfigure:
-    exclude:
-      - org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration
-      - org.springframework.boot.actuate.autoconfigure.metrics.SystemMetricsAutoConfiguration
+    binders:
+      system:
+        enabled: false
