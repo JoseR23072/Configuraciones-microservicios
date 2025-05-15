@@ -14,3 +14,15 @@ eureka:
     service-url:
       defaultZone: http://${EUREKA_INSTANCE_HOSTNAME:localhost}:${server.port}/eureka/
 
+management:
+  metrics:
+    enable:
+      all: false
+  binders:
+    processor:
+      enabled: false
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration
+      - org.springframework.boot.actuate.autoconfigure.metrics.SystemMetricsAutoConfiguration
