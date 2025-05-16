@@ -13,7 +13,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://mysql.railway.internal:3306/railway
     username: ${DB_USER:root}
-    password: ${PECES_DB_PASSWORD}
+    password: ${PECES_DB_PASSWORD:xjdsfvbCHmqGCRkUIGojQkDFnNaVNQQY}
   jpa:
     hibernate:
       ddl-auto: ${HIBERNATE_DDL_AUTO:update}
