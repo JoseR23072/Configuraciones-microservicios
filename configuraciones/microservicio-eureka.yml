@@ -7,8 +7,6 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    service-url:
-      defaultZone: http://microservicio-eureka.railway.internal:8761/eureka/
 
 management:
   metrics:
