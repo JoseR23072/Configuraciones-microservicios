@@ -16,9 +16,8 @@ spring:
     password: ${PECES_DB_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: ${HIBERNATE_DDL_AUTO:validate}
-    database: mysql
-    database-platform: org.hibernate.dialect.MySQL8Dialect
+      ddl-auto: ${HIBERNATE_DDL_AUTO:update}
+    database-platform: org.hibernate.dialect.MySQLDialect
 
 eureka:
   instance:
